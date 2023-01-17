@@ -1,0 +1,291 @@
+/* start variable */
+
+
+/* End Variable */
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../imgs/Background.png);
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+/* End of Global Rules */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Media Querys */
+@media(min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+@media(min-width: 992px){
+    .container{
+        width: 992px;
+    }
+
+}
+@media(min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* End of Media Querys */
+
+/* Start Header */
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 90px;
+}
+body hr{
+    margin: 1px;
+}
+
+.header .logo{
+    padding: 20px;
+    width: 150px;
+}
+
+.header .container .links ul {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.header .container .links ul a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+    padding: 20px;
+}
+
+.links a:hover{
+    background-color: rgba(65, 217, 144, 0.277);
+    border-radius: 50px;
+}
+/* End Header */
+
+/* Start Section */
+.container .homepage{
+    color: aliceblue;
+    display: flex;
+    height: 5;
+}
+.firsttest{
+    padding: 6px;
+}
+.firsttest h1{
+    font-weight: 900;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, rgb(63, 242, 227), rgb(83, 212, 113) , rgb(219, 255, 15), rgb(219, 255, 15));
+}
+.image img{
+    width: 607px;
+    padding-top: 100px;
+    position: relative;
+    margin-right: 78px;
+    overflow: hidden;
+}
+.discount{
+    display: grid;
+    align-content: stretch;
+    justify-content: space-evenly;
+    justify-items: start;
+}
+.discount p{
+    position: absolute;
+    padding-top: 300px;
+    width: 242px;
+}
+
+.discount strong{
+    color: yellow;
+}
+
+
+
+.buynowbutton a{
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: xx-large;
+    color: rgba(65, 237, 137, 0.814);
+    border-style:solid;
+    border-radius: 50px;
+}
+.buynowbutton a:hover{
+    background-color: rgba(37, 152, 224, 0.401);
+}
+/* End Section */
+
+
+
+/* Start Services Section */
+.container .service-three ,.container .service-two ,.container .service-one
+{
+    font-weight: 600;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #8479b975;
+    box-shadow: 0px 0px 12px 5px rgb(139 139 139);
+}
+.service-three p, .service-two p, .service-one p {
+        margin-top: 0;
+    }
+        
+.service-three ul, .service-two ul , .service-one ul {
+    list-style-type: none;
+    }
+
+.service-three a, .service-two a , .service-one a {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-radius: 50px;
+}
+.container .Services{
+    display: flex;
+    justify-content: space-around;
+}
+.Services ul{
+    list-style-type: none;
+    justify-content: flex-start;
+}
+
+
+.Services a:hover{
+    background-color: rgba(209, 223, 13, 0.495);
+    border-color: black;
+}
+/* End Services Section */
+
+/* Start Footer */
+.SocialMediaLinks{
+    /* padding-top: 50px; */
+    width: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.SocialMediaLinks a{
+    z-index: 500;
+    color: white;
+    text-decoration: none;
+}
+/* End of Footer */
+
+.firsttest h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation *
+    white-space:break-spaces; /*Keeps the content on a single line */
+    animation: typing 3s steps(30,end)
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to {border-color: transparent}
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    color: #ccc;
+}
+
+.about img{
+    position: relative;
+    max-width: 300px;
+    margin-left: -700px;
+}
+
+.about h1{
+    align-items: center;
+}
+
+  /* Add CSS for form layout and spacing */
+  form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    color: #2aecb8;
+  }
+
+  /* Add CSS for responsive design */
+  @media (max-width: 600px) {
+    form {
+      width: 90%;
+    }
+  }
+
+  /* Add CSS for input fields */
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  textarea {
+    height: 150px;
+  }
+
+  /* Add CSS for submit button */
+  button[type="submit"] {
+    width: 100%;
+    background-color: #2aecb8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .about{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent#8479b975;
+    box-shadow: 0px 0px 12px 5px rgb(139 139 139);
+  }
