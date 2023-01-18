@@ -120,8 +120,6 @@ body hr{
     color: yellow;
 }
 
-
-
 .buynowbutton a{
     position: relative;
     padding-left: 30px;
@@ -154,10 +152,17 @@ body hr{
 }
 .service-three p, .service-two p, .service-one p {
         margin-top: 0;
+        color: #2aecb8;
     }
         
 .service-three ul, .service-two ul , .service-one ul {
     list-style-type: none;
+    color: #2aecb8;
+    }
+
+    .service-three h1, .service-two h1, .service-one h1 {
+        color: #2aecb8;
+
     }
 
 .service-three a, .service-two a , .service-one a {
@@ -165,26 +170,43 @@ body hr{
     position: relative;
     text-decoration: none;
     color: white;
-    font-size: x-large;
+    font-size: large;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
     border-style: solid;
     border-radius: 50px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom, rgb(15, 174, 0), rgb(44, 255, 94) , rgb(217, 255, 0), rgb(217, 255, 0));
 }
 .container .Services{
     display: flex;
     justify-content: space-around;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom, rgb(15, 174, 0), rgb(44, 255, 94) , rgb(217, 255, 0), rgb(217, 255, 0));
 }
 .Services ul{
     list-style-type: none;
     justify-content: flex-start;
+
 }
-
-
 .Services a:hover{
-    background-color: rgba(209, 223, 13, 0.495);
-    border-color: black;
+    
+    background-color: rgba(248, 244, 22, 0.927);
+    border-color: rgb(230, 238, 231);
+    color: rgb(80, 92, 77);
+    font-size: x-large;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom, rgb(15, 174, 0), rgb(44, 255, 94) , rgb(217, 255, 0), rgb(217, 255, 0));
 }
 /* End Services Section */
 
